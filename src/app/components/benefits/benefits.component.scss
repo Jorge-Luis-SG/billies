@@ -1,0 +1,52 @@
+@import "../../app.component.scss";
+
+.container {
+  max-width: 230px;
+  cursor: pointer;
+  div {
+    .img {
+      max-width: 130px;
+      width: 100%;
+      h6 {
+        font-size: 12rem;
+        line-height: 12rem;
+        top: 0.9rem;
+        right: -2rem;
+        background-image: url(../../../assets/img/benefits/bg.png);
+        background-clip: text;
+        color: transparent;
+        margin-bottom: 0;
+        position: relative;
+        z-index: 12;
+
+        &::before {
+          content: "";
+          height: 100%;
+          width: 100%;
+          position: absolute;
+          top: 0;
+          z-index: 10;
+        }
+      }
+      .nft {
+        max-width: 75px;
+        border-radius: 50%;
+      }
+      .sphere {
+        top: 55%;
+        right: 12%;
+        max-width: 95px;
+      }
+    }
+    p {
+      max-width: 175px;
+      color: $dark-blue;
+      font-weight: bold;
+      height: 85px;
+    }
+  }
+}
+
+.n2 {
+    max-width: 200px !important;
+}
