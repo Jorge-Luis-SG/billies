@@ -7,5 +7,6 @@ button{
   border: none;
   border-radius: 1rem;
   box-shadow: 0px 0px 6px 3px white;
-  padding: 0.3rem 0;
+  padding: 0.45rem 0;
+  @extend %itcBold;
 }

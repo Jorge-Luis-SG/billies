@@ -31,10 +31,16 @@ export class HomeComponent implements OnInit {
 
       pagination: {
         clickable: true,
-
-      }
+        el: ".nft-pagination",
+      },
+      navigation: {
+        nextEl: '.swiper-button-next',
+        prevEl: '.swiper-button-prev',
+      },
+      
 
     });
+
     var events = new Swiper(".events", {
       slidesPerView: 1,
       loop: true,
@@ -52,9 +58,7 @@ export class HomeComponent implements OnInit {
       },
       pagination: {
         clickable: true,
-        el: ".benefits-pagination",
-
-
+        el: ".event-pagination",
       }
 
     });

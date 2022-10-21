@@ -13,11 +13,12 @@
         top: 0.9rem;
         right: -2rem;
         background-image: url(../../../assets/img/benefits/bg.png);
-        background-clip: text;
+        background-clip: text;  
         color: transparent;
         margin-bottom: 0;
         position: relative;
         z-index: 12;
+        -webkit-text-stroke: 3px #ffffff;
 
         &::before {
           content: "";

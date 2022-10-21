@@ -6,10 +6,12 @@
 
 .card {
   position: relative;
-  max-width: 255px;
+  max-width: 373px;
+  width: 100%;
   padding: 1.85rem 0 2.35rem;
-  background: #ffffff00;
+  background: rgba(255, 255, 255, 0);
   border: none;
+  height: 500px;
   &::after {
     content: "";
     position: absolute;
@@ -26,8 +28,8 @@
     z-index: 10;
   }
   img {
-    width: 100%;
-    height: 300px;
+    width: 320px;
+    height: 370px;
     object-fit: cover;
     right: -15px;
   }
@@ -35,12 +37,14 @@
     margin-top: 1.4rem;
     right: -15px;
     font-size: 1.2rem;
+    font-family: 'itc';
+    font-weight: 700;
   }
   .event {
     writing-mode: vertical-lr;
     transform: rotate(180deg);
     left: -28px;
     bottom: 12%;
-    font-size: 1.2rem;
+    font-size: 1.4rem;
   }
 }

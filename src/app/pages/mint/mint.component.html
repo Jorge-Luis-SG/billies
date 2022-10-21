@@ -1,0 +1,134 @@
+<div class="container-fluid px-0 mint">
+  <div class="position-absolute d-flex justify-content-between title-star">
+    <div class="position-relative">
+      <img class="position-relative" src="../../../assets/img/logos-titles/title.svg" alt="">
+      <img class="position-absolute" src="../../../assets/img/figures/circle.svg" alt="">
+    </div>
+    <img class="star" src="../../../assets/img/figures/star.svg" alt="">
+  </div>
+  <div class="mint-main row position-relative">
+    <div class="col-12 col-xl-6 d-flex align-items-center justify-content-center mint-main-section1 ">
+      <div class="mint-main-content position-relative">
+        <div class="mint-main-box1">
+          <h2 class="text-center mb-0">LIMITED MINT</h2>
+          <h4 class="text-center">FIRST COLLECTION</h4>
+          <div class="d-flex justify-content-between text-center mt-5">
+            <p>supply<br>
+              <span>12000</span>
+            </p>
+            <p>price<br>
+              <span>0.025 ETH</span>
+            </p>
+            <p>MAX<br><span>2</span><br><span id="x-wallet">Por Wallet</span></p>
+          </div>
+        </div>
+        <div class="space">
+        </div>
+        <div class="mint-main-box2 d-flex justify-content-evenly justify-content-xl-center">
+          <div class="card d-flex justify-content-center align-items-center">
+            <img class="w-100" src="../../../assets/img/pictures/item1.png" alt="">
+          </div>
+          <div class="sale-mint">
+            <div class="sale-mint-title d-flex align-items-end justify-content-between">
+              <div>
+                <h5 id="limited">limited</h5>
+                <span id="sale">sale</span>
+              </div>
+              <div class="d-flex flex-column align-items-center justify-content-end mb-1">
+                <h6 class="text-center font-weight-bold mb-0" id="x-nft">PRICE PER NFT</h6>
+                <p class="eth mb-0">0.025 ETH</p>
+              </div>
+            </div>
+            <div class="sale-mint-item">
+              <div class="sale-mint-item-sale d-flex align-items-center justify-content-between">
+                <span class="mount">AMOUNT</span>
+                <div class="input d-flex align-items-center">
+                  <span (click)="res()">-</span>
+                  <input type="number" class="text-center" [value]="value" [(ngModel)]="value" max="2">
+                  <span (click)="sum()">+</span>
+                </div>
+                <span class="set-max" (click)="value=2; amount=50;">MAX</span>
+              </div>
+              <p class="text-center total">TOTAL: 0.0{{amount}} ETH  </p>
+            </div>
+          </div>
+
+        </div>
+        <button class="btn text-center">Mint</button>
+      </div>
+    </div>
+    <div class="col-12 col-xl-6 d-flex align-items-center  justify-content-center mt-5 mt-xl-0 mint-main-section2">
+      <img class="position-absolute star1" src="../../../assets/img/figures/star.svg" alt="">
+      <img class="position-absolute star2" src="../../../assets/img/figures/star.svg" alt=""> 
+      <div class="card flex-row d-none d-sm-flex ">
+          <div class="col-12 col-sm-4"></div>
+          <div class="col-12 col-sm-4"></div>
+          <div class="col-12 col-sm-4"></div>
+      </div>
+      <div class="card2 d-sm-none justify-content-center">
+        <div class="swiper nft">
+          <!-- Additional required wrapper -->
+          <div class="swiper-wrapper d-flex align-items-center">
+            <!-- Slides -->
+            <div class="swiper-slide">
+              <img class="nft-img" src="../../../assets/img/pictures/item1.png" alt="">
+            </div>
+            <div class="swiper-slide">
+              <img class="nft-img" src="../../../assets/img/pictures/item2.png" alt="">
+
+            </div>
+            <div class="swiper-slide">
+              <img class="nft-img" src="../../../assets/img/pictures/item3.png" alt="">
+            </div>
+            <div class="swiper-slide">
+              <img class="nft-img" src="../../../assets/img/pictures/item4.png" alt="">
+            </div>
+            <div class="swiper-slide">
+              <img class="nft-img" src="../../../assets/img/pictures/item5.png" alt="">
+
+            </div>
+            <div class="swiper-slide">
+              <img class="nft-img" src="../../../assets/img/pictures/item6.png" alt="">
+            </div>
+            <div class="swiper-slide">
+              <img class="nft-img" src="../../../assets/img/pictures/item7.png" alt="">
+            </div>
+            <div class="swiper-slide">
+              <img class="nft-img" src="../../../assets/img/pictures/item8.png" alt="">
+            </div>
+            <div class="swiper-slide">
+              <img class="nft-img" src="../../../assets/img/pictures/item9.png" alt="">
+            </div>
+            <div class="swiper-slide">
+              <img class="nft-img" src="../../../assets/img/pictures/item10.png" alt="">
+            </div>
+            <div class="swiper-slide">
+              <img class="nft-img" src="../../../assets/img/pictures/item11.png" alt="">
+            </div>
+            <div class="swiper-slide">
+              <img class="nft-img" src="../../../assets/img/pictures/item12.png" alt="">
+            </div>
+            <div class="swiper-slide">
+              <img class="nft-img" src="../../../assets/img/pictures/item13.png" alt="">
+            </div>
+            <div class="swiper-slide">
+              <img class="nft-img" src="../../../assets/img/pictures/item14.png" alt="">
+            </div>
+            <div class="swiper-slide">
+              <img class="nft-img" src="../../../assets/img/pictures/item15.png" alt="">
+            </div>
+            <div class="swiper-slide">
+              <img class="nft-img" src="../../../assets/img/pictures/item16.png" alt="">
+            </div>
+          </div>
+        </div>
+        <div class="swiper-button-prev"></div>
+        <div class="swiper-button-next"></div>
+
+        <div class="nft-pagination d-flex justify-content-center position-absolute"></div>
+      </div>
+    </div>
+  </div>
+</div>
+
+

@@ -1,0 +1,361 @@
+@import "../../app.component.scss";
+
+.mint {
+  background-image: url(../../../assets/img/bg/bg-1.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+  padding: 10rem 0 20rem;
+  &::after {
+    content: " ";
+    user-select: none;
+    pointer-events: none;
+    background-image: url(../../../assets/img/figures/circle2.svg);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position-x: -35%;
+    background-position-y: center;
+    mix-blend-mode: color-burn;
+    position: absolute;
+    width: 100%;
+    height: 60%;
+    top: 7.5%;
+  }
+  .title-star {
+    top: 30px;
+    width: 30%;
+    left: 5%;
+    div {
+      img {
+        &:first-child {
+          max-width: 230px;
+          z-index: 10;
+        }
+        &:last-child {
+          right: 35px;
+          top: -15px;
+          max-width: 40px;
+        }
+      }
+    }
+    .star {
+      max-width: 80px;
+      margin-right: 50px;
+      @media screen and (max-width: 767px) {
+        right: -35px;
+        position: absolute;
+        width: 50px;
+      }
+    }
+  }
+  &-main {
+    max-width: 1450px;
+    width: 98%;
+    margin: 0 auto;
+    @media screen and (max-width: 1050px) {
+      height: 100%;
+    }
+
+    &-section1 {
+      @media screen and (max-width: 1050px) {
+        width: 100%;
+        margin: 4rem 0;
+      }
+    }
+    &-content {
+      max-width: 665px;
+      min-width: 570px;
+      width: 100%;
+      background: #f39c9250;
+      backdrop-filter: blur(20px) brightness(1.5) contrast(0.8);
+      padding: 3rem 0;
+      border-radius: 1.5rem;
+      position: relative;
+      z-index: 5;
+      &::before {
+        content: " ";
+        width: 55px;
+        height: 55px;
+        position: absolute;
+        bottom: -25px;
+        left: -25px;
+        border-radius: 50%;
+        background-color: #ffffff;
+        z-index: 9;
+      }
+      @media screen and (max-width: 1050px) {
+        margin: 0 auto;
+        min-width: 100%;
+      }
+      @media screen and (max-width: 600px) {
+        padding: 3rem 0 7rem 0;
+      }
+    }
+    .space {
+      height: 5px;
+      background-size: cover;
+      background-repeat: no-repeat;
+    }
+    &-box1 {
+      h2 {
+        font-size: 2.15rem;
+        margin-bottom: 2.2rem;
+        font-weight: normal;
+      }
+      h4 {
+        font-size: 1.5rem;
+        font-weight: normal;
+      }
+      p {
+        width: 30%;
+        font-size: 1.7rem;
+        text-transform: uppercase;
+        font-weight: 700;
+        line-height: 2rem;
+        margin-bottom: 0;
+        color: $dark-blue;
+        &:nth-child(2) {
+          width: 40%;
+          position: relative;
+          &::after,
+          &::before {
+            content: "";
+            width: 20px;
+            height: 20px;
+            position: absolute;
+            top: 20px;
+            border-radius: 50%;
+            background-color: #ea4e91;
+          }
+          &::after {
+            left: 0;
+          }
+          &::before {
+            right: 0;
+          }
+        }
+        span {
+          font-size: 1.65rem;
+          font-weight: 400;
+          color: #ffffff;
+        }
+        #x-wallet {
+          font-size: 1rem;
+        }
+      }
+    }
+    &-box2 {
+      @media screen and (max-width: 1050px) {
+        justify-content: space-around;
+      }
+      .card {
+        background-color: #00000000;
+        margin: 0 1.5rem 0 0;
+        max-width: 250px;
+        padding: 1.5rem;
+        border-radius: 1rem;
+        border: 1.5px solid #ffffff;
+        @media screen and (max-width: 600px) {
+          margin: 0 auto;
+        }
+      }
+
+      .sale-mint {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        max-width: 290px;
+        width: 100%;
+        @media screen and (max-width: 600px) {
+          margin: 3rem auto 0;
+        }
+        &-title {
+          #limited {
+            font-weight: bold;
+            font-size: 1.5rem;
+            margin-bottom: 0;
+          }
+          #sale {
+            margin: 0;
+            font-weight: bold;
+            font-size: 4rem;
+            text-transform: uppercase;
+            line-height: 4rem;
+          }
+
+          span {
+            font-size: 2.5rem;
+            font-family: "nove";
+            font-weight: normal;
+          }
+          .eth {
+            font-weight: normal;
+          }
+        }
+        &-item {
+          .eth {
+            font-weight: normal;
+            margin-bottom: 0;
+          }
+          &-sale {
+            border: 2px solid white;
+            padding: 0.5rem 1rem;
+            border-radius: 1.65rem;
+            width: 100%;
+            min-width: 250px;
+            margin-top: 0.5rem;
+            .mount {
+              font-size: 1.25rem;
+              font-weight: bold;
+            }
+            .input {
+              span {
+                cursor: pointer;
+                height: 20px;
+                width: 20px;
+                border-radius: 50%;
+                border: 2px solid $dark-blue;
+                color: $dark-blue;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                font-size: 1rem;
+                transition: all 0.35s;
+                &:hover {
+                  background-color: $dark-blue;
+                  color: #ffffff;
+                }
+              }
+              input {
+                max-width: 40px;
+                background-color: transparent;
+                border: none;
+                font-size: 2rem;
+                // &::-webkit-inner-spin-button,
+                // &::-webkit-outer-spin-button {
+                //   -webkit-appearance: none;
+                //   margin: 0;
+                // }
+                &:active,
+                &:focus {
+                  outline: none;
+                  border: none;
+                }
+              }
+            }
+            .set-max {
+              font-size: 0.65rem;
+              padding: 0.2rem 0.75rem;
+              border-radius: 1rem;
+              cursor: pointer;
+              background-color: $dark-blue;
+            }
+          }
+          .total {
+            padding: 0.3rem;
+            font-size: 0.9 rem;
+          }
+        }
+      }
+      @media screen and (max-width: 600px) {
+        flex-direction: column;
+      }
+    }
+    .btn {
+      background: #ffffff;
+      width: 185px;
+      border-radius: 1.1rem;
+      border: none;
+      margin: 2rem auto 0;
+      display: flex;
+      text-align: center;
+      justify-content: center;
+      font-size: 1.05rem;
+      padding: 0.76rem 0;
+      color: $dark-blue;
+      font-weight: 600;
+    }
+    &-section2 {
+      z-index: 5;
+      position: relative;
+      @media screen and (max-width:1200px){
+        max-width: 750px;
+        margin: 0 auto;
+        .star2 {
+          bottom: 55px !important;
+        }
+      }
+      .star1,
+      .star2 {
+        width: 75px;
+        z-index: 999;
+      }
+      .star1 {
+        top: 15%;
+        left: 0;
+      }
+      .star2 {
+        right: 0;
+      bottom: 130px;
+      }
+      .card {
+        max-width: 605px;
+        width: 90%;
+        margin: 0 auto;
+        background-color: transparent;
+        border-radius: 2rem;
+        padding: 2rem;
+        border: none;
+        backdrop-filter: blur(6px) brightness(1.5);
+        position: relative;
+
+        div {
+          background-position-x: center;
+          background-size: cover;
+          height: 400px;
+          &:first-child {
+            background-image: url(../../../assets/img/pictures/item18.png);
+            border-radius: 1rem 0 0 1rem;
+          }
+          &:nth-child(2) {
+            background-image: url(../../../assets/img/pictures/item2.png);
+          }
+          &:last-child {
+            background-image: url(../../../assets/img/pictures/item3.png);
+            border-radius: 0 1rem 1rem 0;
+          }
+          .nft-img {
+            width: 100%;
+            height: 450px;
+            object-fit: cover;
+          }
+        }
+      }
+      .card2 {
+        max-width: 605px;
+        width: 90%;
+        margin: 0 auto;
+        background-color: transparent;
+        border-radius: 2rem;
+        padding: 2rem;
+        border: none;
+        backdrop-filter: blur(6px) brightness(1.5);
+        div {
+          .nft-img {
+            width: 100%;
+            height: 450px;
+            object-fit: cover;
+          }
+        }
+      }
+      @media screen and (max-width: 1050px) {
+        width: 100%;
+        .card {
+          margin: 0 auto 4rem;
+        }
+      }
+    }
+  }
+}
+
