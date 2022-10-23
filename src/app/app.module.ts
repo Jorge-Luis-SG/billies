@@ -12,12 +12,13 @@ import { BtnComponent } from './components/btn/btn.component';
 import { SwiperModule } from 'swiper/angular';
 import { AdvertisementsComponent } from './components/advertisements/advertisements.component';
 import { BenefitsComponent } from './components/benefits/benefits.component';
-import { FormsModule } from '@angular/forms';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { FooterComponent } from './components/footer/footer.component';
 import { RouterModule } from '@angular/router';
 import { MintComponent } from './pages/mint/mint.component';
 import { LangComponent } from './lang/lang.component';
 import { HttpClient, HttpClientModule } from '@angular/common/http';
+import { CommonModule } from '@angular/common';
 
 
 @NgModule({
@@ -37,9 +38,11 @@ import { HttpClient, HttpClientModule } from '@angular/common/http';
     BrowserModule,
     AppRoutingModule,
     SwiperModule,
+    CommonModule,
     FormsModule,
     RouterModule,
     HttpClientModule,
+    ReactiveFormsModule,
     TranslateModule.forRoot({
       loader: {
         provide: TranslateLoader,

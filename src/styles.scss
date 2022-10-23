@@ -23,5 +23,39 @@ p{
   font-family: "Gotham";
   font-weight: 100;
   letter-spacing: 2px;
+}
 
+
+// Propiedades de Swiper = carrusel :)
+
+.swiper-pagination-bullet.swiper-pagination-bullet-active{
+  background-color: #ffffff;
+}
+// .swiper-pagination-bullet{
+//   width: 12px;
+//   height: 12px;
+// }
+
+.swiper-button-prev {
+  content: url(../src/assets/img/figures/left.svg);
+}
+.swiper-button-next {
+  content: url(../src/assets/img/figures/rigth.svg);
+}
+
+.swiper-button-prev,
+.swiper-button-next {
+  top: 47%;
+  background-color: #ffffff;
+  border-radius: 50%;
+  color: $dark-blue;
+  width: 30px;
+  height: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.1rem;
+  border: none;
+  position: absolute;
+  padding: 0.4rem !important;
 }

@@ -13,7 +13,7 @@
         top: 0.9rem;
         right: -2rem;
         background-image: url(../../../assets/img/benefits/bg.png);
-        background-clip: text;  
+        background-clip: text;
         color: transparent;
         margin-bottom: 0;
         position: relative;
@@ -44,6 +44,9 @@
       color: $dark-blue;
       font-weight: bold;
       height: 85px;
+      font-family: "itc";
+      font-weight: bold;
+      letter-spacing: 0;
     }
   }
 }

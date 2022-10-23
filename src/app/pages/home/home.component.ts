@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import Swiper from 'swiper';
+import * as Aos from 'aos';
 
 
 import SwiperCore, { Keyboard, Pagination, Navigation, Virtual } from 'swiper';
@@ -14,9 +15,12 @@ SwiperCore.use([Virtual]);
 })
 export class HomeComponent implements OnInit {
   // install Swiper modules
-  constructor() {}
+  constructor() {
+    Aos.init();
+
+  }
   ngOnInit(): void {
-    throw new Error('Method not implemented.');
+    // throw new Error('Method not implemented.');
   }
 
   ngAfterViewInit(): void {
@@ -24,37 +28,32 @@ export class HomeComponent implements OnInit {
     var nft = new Swiper(".nft", {
       slidesPerView: 1,
       loop: true,
-      autoplay: {
-        delay: 2500,
-        disableOnInteraction: false,
-      },
 
-      pagination: {
-        clickable: true,
-        el: ".nft-pagination",
-      },
       navigation: {
         nextEl: '.swiper-button-next',
         prevEl: '.swiper-button-prev',
       },
-      
+      pagination: {
+        clickable: true,
+        el: ".section2-pagination",
+      }
+
 
     });
 
     var events = new Swiper(".events", {
       slidesPerView: 1,
       loop: true,
-      autoplay: {
-        delay: 2500,
-        disableOnInteraction: false,
-      },
       breakpoints: {
-        768: {
+        700: {
           slidesPerView: 2,
         },
-        1300: {
-            slidesPerView: 3,
-          }
+        992: {
+          slidesPerView: 1,
+        },
+        1350: {
+          slidesPerView: 2,
+        }
       },
       pagination: {
         clickable: true,
@@ -65,10 +64,6 @@ export class HomeComponent implements OnInit {
     var benefits = new Swiper(".benefits", {
       slidesPerView: 3,
       // loop: true,
-      autoplay: {
-        delay: 2500,
-        disableOnInteraction: false,
-      },
       breakpoints: {
         0: {
           slidesPerView: 1,
@@ -83,6 +78,10 @@ export class HomeComponent implements OnInit {
             slidesPerView: 6,
           }
       },
+      navigation: {
+        nextEl: '.benefits-next',
+        prevEl: '.benefits-prev',
+      },
       pagination: {
         clickable: true,
         el: ".benefits-pagination",
@@ -91,10 +90,6 @@ export class HomeComponent implements OnInit {
     });
     var paz = new Swiper(".paz", {
       slidesPerView: 1,
-      autoplay: {
-        delay: 2500,
-        disableOnInteraction: false,
-      },
       breakpoints: {
         700: {
           slidesPerView: 2,
@@ -112,10 +107,6 @@ export class HomeComponent implements OnInit {
     var alianza = new Swiper(".alianza", {
       slidesPerView: 1,
       loop: true,
-      autoplay: {
-        delay: 2500,
-        disableOnInteraction: false,
-      },
       breakpoints: {
         700: {
           slidesPerView: 2,

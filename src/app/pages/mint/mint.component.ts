@@ -14,25 +14,24 @@ SwiperCore.use([Virtual]);
 })
 export class MintComponent implements OnInit {
   constructor() {}
-
   ngOnInit(): void {}
   value = 0;
   amount = 0;
 
   sum() {
     this.value++;
-    this.amount = 25 * this.value;
-    if (this.value > 2) {
-      this.value = 2;
-      this.amount = 50;
+    this.amount = 29 * this.value;
+    if (this.value > 3) {
+      this.value = 3;
+      this.amount = 87;
     }
   }
   res() {
     this.value--;
-    this.amount = 25 * this.value;
-    if (this.value > 2) {
-      this.value = 2;
-      this.amount = 50;
+    this.amount = 29 * this.value;
+    if (this.value > 3) {
+      this.value = 3;
+      this.amount = 87;
     }
     if (this.value < 0) {
       this.value = 0;

@@ -9,8 +9,7 @@ export class BtnComponent implements OnInit {
 
   constructor() { }
 
-  @Input() name: string = "";
-
+  @Input() name= "";
   ngOnInit(): void {
   }
 

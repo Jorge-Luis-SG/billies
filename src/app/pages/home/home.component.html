@@ -8,18 +8,18 @@
           <!-- TITULO Y ESTRELLA QUE VAN EN LA PARTE SUPERIOR  -->
           <div class="position-absolute d-flex justify-content-between title-star">
             <div class="position-relative">
-              <img class="position-relative" src="../../../assets/img/logos-titles/title.svg" alt="">
+              <img class="position-relative" src="../../../assets/img/logos-titles/title.svg" routerLink="/home" alt="">
               <img class="position-absolute" src="../../../assets/img/figures/circle.svg" alt="">
             </div>
             <img class="star" src="../../../assets/img/figures/star.svg" alt="">
           </div>
           <!-- CAJA QUE CONTIENE LOS ELEMENTOS DEL CENTRO DEL HOME SECCION 1  -->
-          <div class="home-section1-box1-item">
+          <div class="home-section1-box1-item text-center text-lg-start over" data-aos="fade-right">
             <h4>Creating joy and</h4>
             <h2>weekend vibes</h2>
             <h4 class="mb-5">all week long…</h4>
             <div class="mt-3">
-              <app-btn name="Mint"></app-btn>
+              <app-btn name="Mint" routerLink="/mint"></app-btn>
             </div>
           </div>
         </div>
@@ -46,15 +46,15 @@
               </div>
             </div>
             <!-- If we need scrollbar -->
-            <div class="swiper-scrollbar"></div>
+
           </div>
         </div>
       </div>
     </div>
 
     <div class="row home-section2 ">
-      <div class="col-12 col-lg-6 d-flex align-items-center justify-content-center home-section2-box1">
-        <div class="position-relative home-section2-box1">
+      <div class="col-12 col-lg-6 d-flex align-items-center justify-content-center home-section2-box1 overflow-hidden">
+        <div class="position-relative home-section2-box1" data-aos="fade-up">
           <h2 class="mt-5 mt-lg-0">THROUGH
             <br>LOVE & PARTY
             <br>SPIRIT TOGETHER
@@ -68,16 +68,16 @@
 
           <div class="btns d-flex flex-column ">
             <app-btn name="Watch Video" class="mb-4"></app-btn>
-            <app-btn name="hol"></app-btn>
+            <app-btn name="Mint" routerLink="/mint"></app-btn>
           </div>
 
         </div>
       </div>
-      <div class="col-12 col-lg-6 home-section2-box2">
-        <div class="home-section2-box2-card w-100 h-100 mx-auto d-flex align-items-center justify-content-center">
-          <img class="position-absolute star1" src="../../../assets/img/figures/star.svg" alt="">
-          <img class="position-absolute star2" src="../../../assets/img/figures/star.svg" alt="">
-          <div class="swiper nft">
+      <div class="col-12 col-lg-6 home-section2-box2 overflow-hidden">
+        <div class="home-section2-box2-card w-100 h-100 mx-auto d-flex align-items-center justify-content-center" >
+          <img class="position-absolute star1" src="../../../assets/img/figures/star.svg" alt="" data-aos="fade-right">
+          <img class="position-absolute star2" src="../../../assets/img/figures/star.svg" alt=""data-aos="fade-left">
+          <div class="swiper nft" data-aos="fade-up">
             <!-- Additional required wrapper -->
             <div class="swiper-wrapper d-flex align-items-center">
               <!-- Slides -->
@@ -132,54 +132,51 @@
                 <img class="nft" src="../../../assets/img/pictures/item16.png" alt="">
               </div>
             </div>
+            <div class="section2-pagination"></div>
           </div>
           <div class="swiper-button-prev"></div>
           <div class="swiper-button-next"></div>
 
-          <div class="nft-pagination d-flex justify-content-center position-absolute"></div>
         </div>
       </div>
     </div>
   </div>
 
   <div class="home-section3 row overflow-hidden">
-    <div class="col-12 col-lg-6 d-flex align-items-center justify-content-center position-relative home-section3-box1 ">
+    <div class="col-12 col-lg-6 d-flex align-items-center justify-content-center position-relative home-section3-box1" data-aos="fade-up-right">
       <img class="title" src="../../../assets/img/figures/titlle2.svg" alt="">
       <img class="star position-absolute " src="../../../assets/img/figures/star.svg" alt="">
 
     </div>
     <div
-      class="col-12 col-lg-6 position-relative d-flex flex-column justify-content-center align-items-center mt-5 mt-lg-0 home-section3-box2">
+      class="col-12 col-lg-6 position-relative d-flex flex-column justify-content-center align-items-center mt-5 mt-lg-0 home-section3-box2" data-aos="fade-up-left">
       <div>
         <h3 class="mb-5">WHO ARE WE? </h3>
         <p>A global collective made up of people with a social conscience and interest, affinity and curiosity for
           cultural exchange and initiatives to help different communities and that seeks to celebrate the things in life
-          that make us happy, that connect us and that give us vibrations of the weekend throughout the week. <br><br>
+          that make us happy, that connect us and that give us vibrations of the weekend throughout the week.<br><br>
 
-          A global collective made up of people with a social conscience and interest, affinity and curiosity for
-          cultural
-          exchange and initiatives to help different communities and that seeks to celebrate the things in life that
-          make
-          us happy, that connect us and that give us vibrations of the weekend throughout the week.
+          It’s an ultra-exclusive community of like-minded people. Join our collective, enjoy it, connect with the
+          community and help create opportunities for other people around the world.
         </p>
-        <app-btn name="Whitepaper"></app-btn>
+        <div class="btn-white">
+          <app-btn name="Whitepaper"></app-btn>
 
+        </div>
         <hr>
       </div>
     </div>
   </div>
 
-  <div class="home-section4 row py-5">
+  <div class="home-section4 row py-5 overflow-hidden">
     <div class="col-12 col-lg-4 position-relative d-flex align-items-center justify-content-center home-section4-box1">
-      <h4 class="mb-5">UPCOMING
-        <span>EVENTS</span>
+      <h4 class="mb-5" data-aos="fade-right">UPCOMING
+        <span class="mt-2">EVENTS</span>
       </h4>
       <img class="star position-absolute " src="../../../assets/img/figures/star.svg" alt="">
 
     </div>
     <div class="col-12 col-lg-8 home-section4-box2">
-      <!--
-      <app-card-event event="2" name="CARTAGENA - DEC"></app-card-event> -->
 
       <div class="swiper events">
         <!-- Additional required wrapper -->
@@ -215,8 +212,8 @@
   <div class="bg-5">
     <div class="home-section5 row pt-5">
       <div class="col-12 col-lg-6 d-flex flex-column
-     align-items-center justify-content-center home-section5-box1">
-        <div class="text-center text-lg-start my-5 my-lg-0">
+     align-items-center justify-content-center home-section5-box1 overflow-hidden" >
+        <div class="text-center text-lg-start my-5 my-lg-0" data-aos="flip-left">
           <h4>THE<br><span>ARTIST</span></h4>
           <p class="mt-5">
             Brazilian Artist, Fiorello, brings his vibrant color style to 10,000 unique pieces in the collection. There
@@ -227,25 +224,25 @@
 
       </div>
       <div class="col-12 col-lg-6 d-flex align-items-center justify-content-center home-section5-box2">
-        <div class="home-section5-box2-card position-relative">
+        <div class="home-section5-box2-card position-relative" data-aos="flip-right">
           <img class="team" src="../../../assets/img/team/fiorello.png" alt="FIORELLO">
           <img class="star1 position-absolute" src="../../../assets/img/figures/star.svg" alt="">
           <img class="star2 position-absolute" src="../../../assets/img/figures/star.svg" alt="">
           <img class="star3 position-absolute" src="../../../assets/img/figures/star.svg" alt="">
-          <h6 class="text-center mt-3">FIORELLO</h6>
+          <h6 class="text-center ">FIORELLO</h6>
 
 
         </div>
       </div>
 
-      <div class="col-12 home-section6">
-        <div class="title position-relative d-flex justify-content-center">
+      <div class="col-12 home-section6 overflow-hidden">
+        <div class="title position-relative d-flex justify-content-center" data-aos="fade-left">
           <span class="position-absolute">Billie’s</span>
           <h4 class="mb-0">BENEFITS</h4>
           <img class="star position-absolute" src="../../../assets/img/figures/star.svg" alt="">
         </div>
         <hr class="position-relative">
-        <p class="paragraph mx-auto mt-5 text-center">
+        <p class="paragraph mx-auto mt-5 text-center" data-aos="fade-up">
           Billie´s holders will gain entry into our Weekend Collective and have priority access to future
           projects.<br><br>
 
@@ -261,16 +258,16 @@
                 <app-benefits number="1" p="Exclusive access to premium IRL and URL events"></app-benefits>
               </div>
               <div class="swiper-slide">
-                <app-benefits number="2" p="Full IP Rights to your art"></app-benefits>
+                <app-benefits number="2" p="Ownership & commercial usage rights"></app-benefits>
               </div>
               <div class="swiper-slide">
                 <app-benefits number="3" p="Free Mint and Whitelist for Special Projects"></app-benefits>
               </div>
               <div class="swiper-slide">
-                <app-benefits number="4" p="Free Mint and Whitelist for Special Projects"></app-benefits>
+                <app-benefits number="4" p="Rare Selection of 500 tokens that will mutate"></app-benefits>
               </div>
               <div class="swiper-slide">
-                <app-benefits number="5" p="Networking Community"></app-benefits>
+                <app-benefits number="5" p="Access to our Exclusive Members Community"></app-benefits>
               </div>
               <div class="swiper-slide">
                 <app-benefits number="6" p="Metaverse access to Billie’s Weekend Collective"></app-benefits>
@@ -279,24 +276,15 @@
                 <app-benefits number="7" p="Free mint of your digital identity in the Metaverse"></app-benefits>
               </div>
               <div class="swiper-slide">
-                <app-benefits number="8" p="Free Mint unRevel NFT"></app-benefits>
+                <app-benefits number="8" p="Additional asset packs that include educational videos"></app-benefits>
               </div>
               <div class="swiper-slide">
-                <app-benefits number="9" p="Access to a 60+ video course on NFTs and Metaverse"></app-benefits>
-              </div>
-              <div class="swiper-slide">
-                <app-benefits class="n2" number="10"
-                  p="Access to monthly live seminars on NFTs, Blockchain, and Metaverse"></app-benefits>
-              </div>
-              <div class="swiper-slide">
-                <app-benefits class="n2" number="11" p="IRL Treasure Hunt"></app-benefits>
-              </div>
-              <div class="swiper-slide">
-                <app-benefits class="n2" number="12"
-                  p="US holders can receive a certificate of donation for tax purposes"></app-benefits>
+                <app-benefits number="9" p="IRL Treasure Hunt"></app-benefits>
               </div>
             </div>
 
+            <div class="swiper-button-prev benefits-prev"></div>
+            <div class="swiper-button-next benefits-next"></div>
             <div class="benefits-pagination d-flex justify-content-center">
               <div>
               </div>
@@ -375,15 +363,15 @@
             </div>
             <div class="col-12 col-lg-6 home-section8-box2">
               <div class="elements">
-                <div class="item1">
+                <div class="item1" data-aos="fade-left">
                   <span>PHASE 1: Creation</span>
                   <p>Creation of the art and rarities for 10,000 unique NFTs</p>
                 </div>
-                <div class="item2">
+                <div class="item2" data-aos="fade-up">
                   <span>PHASE 2: Mint</span>
-                  <p>Mint at 0.025 ETH</p>
+                  <p>Mint at 0.029 ETH</p>
                 </div>
-                <div class="item3">
+                <div class="item3" data-aos="fade-right">
                   <span>PHASE 3: Sell Out</span>
                   <p>Once we sell out, the 3-day countdown to reveal begins.</p>
                 </div>
@@ -464,19 +452,19 @@
           </div>
 
           <div class="faq-box row justify-content-center justify-content-lg-between mt-4 mt-sm-0">
-            <div class="col-12 col-sm-6 mt-5 text-center text-sm-start">
+            <div class="col-12 col-sm-6 mt-5 text-center text-sm-start" data-aos="fade-right">
               <h4>HOW MANY NFT ARE GOING TO EXIST? </h4>
               <p>10,000 NFTS IN THE FIRST COLLECTION. </p>
             </div>
-            <div class="col-12 col-sm-6 mt-5 text-center text-sm-start">
+            <div class="col-12 col-sm-6 mt-5 text-center text-sm-start" data-aos="fade-left">
               <h4>HOW MANY PER</h4>
               <p>3 MAX.</p>
             </div>
-            <div class="col-12 col-sm-6 mt-5 text-center text-sm-start">
+            <div class="col-12 col-sm-6 mt-5 text-center text-sm-start" data-aos="fade-up">
               <h4>MINT PRICE? </h4>
               <p>0.025 ETH.</p>
             </div>
-            <div class="col-12 col-sm-6 mt-5 text-center text-sm-start">
+            <div class="col-12 col-sm-6 mt-5 text-center text-sm-start" data-aos="fade-up">
               <h4>BLOCKCHAIN?</h4>
               <p>ETHEREUM.</p>
             </div>

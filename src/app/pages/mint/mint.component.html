@@ -1,7 +1,7 @@
 <div class="container-fluid px-0 mint">
   <div class="position-absolute d-flex justify-content-between title-star">
     <div class="position-relative">
-      <img class="position-relative" src="../../../assets/img/logos-titles/title.svg" alt="">
+      <img class="position-relative" src="../../../assets/img/logos-titles/title.svg" routerLink="/home" alt="">
       <img class="position-absolute" src="../../../assets/img/figures/circle.svg" alt="">
     </div>
     <img class="star" src="../../../assets/img/figures/star.svg" alt="">
@@ -17,9 +17,9 @@
               <span>12000</span>
             </p>
             <p>price<br>
-              <span>0.025 ETH</span>
+              <span>0.029 ETH</span>
             </p>
-            <p>MAX<br><span>2</span><br><span id="x-wallet">Por Wallet</span></p>
+            <p>MAX<br><span>3</span><br><span id="x-wallet">Por Wallet</span></p>
           </div>
         </div>
         <div class="space">
@@ -34,9 +34,9 @@
                 <h5 id="limited">limited</h5>
                 <span id="sale">sale</span>
               </div>
-              <div class="d-flex flex-column align-items-center justify-content-end mb-1">
-                <h6 class="text-center font-weight-bold mb-0" id="x-nft">PRICE PER NFT</h6>
-                <p class="eth mb-0">0.025 ETH</p>
+              <div class="d-flex flex-column align-items-start justify-content-end mb-1">
+                <h6 class="text-start font-weight-bold mb-0" id="x-nft">PRICE PER NFT</h6>
+                <p class="eth mb-0 text-start">0.029 ETH</p>
               </div>
             </div>
             <div class="sale-mint-item">
@@ -44,22 +44,22 @@
                 <span class="mount">AMOUNT</span>
                 <div class="input d-flex align-items-center">
                   <span (click)="res()">-</span>
-                  <input type="number" class="text-center" [value]="value" [(ngModel)]="value" max="2">
+                  <input type="number" class="text-center user-select-none" [value]="value" [(ngModel)]="value" max="2">
                   <span (click)="sum()">+</span>
                 </div>
-                <span class="set-max" (click)="value=2; amount=50;">MAX</span>
+                <span class="set-max" (click)="value=3; amount=87;">MAX</span>
               </div>
               <p class="text-center total">TOTAL: 0.0{{amount}} ETH  </p>
             </div>
           </div>
 
         </div>
-        <button class="btn text-center">Mint</button>
+        <button class="btn-mint text-center d-flex justify-content-center">Mint</button>
       </div>
     </div>
     <div class="col-12 col-xl-6 d-flex align-items-center  justify-content-center mt-5 mt-xl-0 mint-main-section2">
       <img class="position-absolute star1" src="../../../assets/img/figures/star.svg" alt="">
-      <img class="position-absolute star2" src="../../../assets/img/figures/star.svg" alt=""> 
+      <img class="position-absolute star2" src="../../../assets/img/figures/star.svg" alt="">
       <div class="card flex-row d-none d-sm-flex ">
           <div class="col-12 col-sm-4"></div>
           <div class="col-12 col-sm-4"></div>
