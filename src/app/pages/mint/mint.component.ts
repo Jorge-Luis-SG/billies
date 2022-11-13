@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { Title } from '@angular/platform-browser';
 import Swiper from 'swiper';
 
 import SwiperCore, { Keyboard, Pagination, Navigation, Virtual } from 'swiper';
@@ -13,7 +14,9 @@ SwiperCore.use([Virtual]);
   styleUrls: ['./mint.component.scss'],
 })
 export class MintComponent implements OnInit {
-  constructor() {}
+  constructor(private title:Title) {
+    title.setTitle("Billies | Weekend Vibes | NFT Collection | Giving back")
+  }
   ngOnInit(): void {}
   value = 0;
   amount = 0;

@@ -62,17 +62,20 @@ p {
           margin: 1rem 0;
           @extend %h-regular;
         }
-        @media screen and (max-width: 767px) {
+        @media screen and (max-width: 1400px) {
           h4 {
             font-size: 2.7rem;
           }
           h2 {
-            font-size: 4rem;
+            font-size: 5.5rem;
           }
         }
         @media screen and (max-width: 767px) {
           h4 {
             font-size: 1.75rem;
+          }
+          h2 {
+            font-size: 4rem;
           }
         }
       }
@@ -115,11 +118,12 @@ p {
         div {
           background-position-x: center;
           background-position-y: top;
+          background-size: cover;
           &:first-child {
-            background-image: url(../../../assets/img/pictures/item18.png);
+            background-image: url(../../../assets/img/pictures/item1.png);
           }
           &:nth-child(2) {
-            background-image: url(../../../assets/img/pictures/item2.png);
+            background-image: url(../../../assets/img/pictures/item16.png);
           }
           &:last-child {
             background-image: url(../../../assets/img/pictures/item3.png);
@@ -144,6 +148,13 @@ p {
   }
 
   &-section2 {
+    position: relative;
+    .swiper-button-prev {
+      left: 20px !important;
+    }
+    .swiper-button-next {
+      right: 20px !important;
+    }
     &-box1 {
       h2 {
         font-size: 4rem;
@@ -175,6 +186,7 @@ p {
         }
       }
       @media screen and (max-width: 600px) {
+        width: 85%;
         h2 {
           font-size: 2.45rem;
         }
@@ -216,12 +228,6 @@ p {
         background-repeat: no-repeat;
         background-size: contain;
         background-position-y: center;
-      }
-      .swiper-button-prev {
-        left: 20px;
-      }
-      .swiper-button-next {
-        right: 20px;
       }
       &-card {
         max-width: 450px;
@@ -265,6 +271,32 @@ p {
             right: 0;
           }
         }
+      }
+    }
+    #video {
+      display: none;
+      backdrop-filter: blur(5px) brightness(0.5);
+    }
+    .video {
+      position: fixed;
+      z-index: 99999;
+      height: 100vh;
+      top: 0;
+      display: none;
+      .close {
+        width: 50px;
+        position: absolute;
+        right: 50px;
+        top: 50px;
+        cursor: pointer;
+        @media screen and (max-width: 767px) {
+          width: 40px;
+          right: 10px;
+        }
+      }
+      iframe {
+        width: 100%;
+        height: 401px;
       }
     }
   }
@@ -383,6 +415,7 @@ p {
         left: 15%;
       }
     }
+
   }
   &-section5 {
     position: relative;
@@ -482,7 +515,6 @@ p {
     }
   }
   &-section6 {
-
     .benefits > .benefits {
       position: relative;
       .swiper-button-prev,
@@ -940,7 +972,6 @@ p {
 }
 
 //CARRUSEL FLECHAS  / ARROWS
-
 
 .home-section8-box2::-webkit-scrollbar {
   width: 15px; /* Tamaño del scroll en vertical */

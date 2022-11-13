@@ -1,4 +1,4 @@
-<div class="container-fluid px-0 home">
+<div class="container-fluid px-0 home" id="top">
   <!-- BACKGROUND ! -->
   <div class="bg1">
     <div class="row home-section1">
@@ -15,11 +15,12 @@
           </div>
           <!-- CAJA QUE CONTIENE LOS ELEMENTOS DEL CENTRO DEL HOME SECCION 1  -->
           <div class="home-section1-box1-item text-center text-lg-start over" data-aos="fade-right">
-            <h4>Creating joy and</h4>
-            <h2>weekend vibes</h2>
-            <h4 class="mb-5">all week long…</h4>
+            <h4>{{'home.section1.title1' | translate}}</h4>
+            <h2>{{'home.section1.title2' | translate}}</h2>
+            <h4 class="mb-5">{{'home.section1.title3' | translate}}</h4>
             <div class="mt-3">
-              <app-btn name="Mint" routerLink="/mint"></app-btn>
+              <a href="https://forms.gle/DhrWLcpdMwFYDBt1A" target="_blank">
+              <app-btn name="Mint"></app-btn></a>
             </div>
           </div>
         </div>
@@ -30,53 +31,34 @@
           <div class="col-12 col-sm-4"></div>
           <div class="col-12 col-sm-4"></div>
         </div>
-        <div class="home-section1-box2-items-movil d-flex d-lg-none">
-          <div class="swiper nft">
-            <!-- Additional required wrapper -->
-            <div class="swiper-wrapper d-flex align-items-center">
-              <!-- Slides -->
-              <div class="swiper-slide">
-                <img src="../../../assets/img/pictures/item1.png" alt="">
-              </div>
-              <div class="swiper-slide">
-                <img src="../../../assets/img/pictures/item2.png" alt="">
-              </div>
-              <div class="swiper-slide">
-                <img src="../../../assets/img/pictures/item3.png" alt="">
-              </div>
-            </div>
-            <!-- If we need scrollbar -->
-
-          </div>
-        </div>
       </div>
     </div>
 
     <div class="row home-section2 ">
       <div class="col-12 col-lg-6 d-flex align-items-center justify-content-center home-section2-box1 overflow-hidden">
         <div class="position-relative home-section2-box1" data-aos="fade-up">
-          <h2 class="mt-5 mt-lg-0">THROUGH
-            <br>LOVE & PARTY
-            <br>SPIRIT TOGETHER
+          <h2 class="mt-5 mt-lg-0">{{'home.section2.title1' | translate}}
+            <br>{{'home.section2.title2' | translate}}
           </h2>
           <div class="star d-flex flex-column position-absolute">
             <img class="" src="../../../assets/img/figures/star.svg" alt="">
             <img class="position-relative" src="../../../assets/img/figures/star.svg" alt="">
           </div>
-          <p>That love connection, a great party, and giving back in meaningful ways.
+          <p>{{'home.section2.p' | translate}}
           </p>
 
-          <div class="btns d-flex flex-column ">
-            <app-btn name="Watch Video" class="mb-4"></app-btn>
-            <app-btn name="Mint" routerLink="/mint"></app-btn>
+          <div class="btns d-flex flex-column pb-3">
+            <app-btn name="Watch Video" class="mb-4" id="videoOpen"  (click)="openVideo()"></app-btn>
+            <a href="https://forms.gle/DhrWLcpdMwFYDBt1A" target="_blank">
+              <app-btn name="Mint"></app-btn></a>
           </div>
 
         </div>
       </div>
       <div class="col-12 col-lg-6 home-section2-box2 overflow-hidden">
-        <div class="home-section2-box2-card w-100 h-100 mx-auto d-flex align-items-center justify-content-center" >
+        <div class="home-section2-box2-card w-100 h-100 mx-auto d-flex align-items-center justify-content-center">
           <img class="position-absolute star1" src="../../../assets/img/figures/star.svg" alt="" data-aos="fade-right">
-          <img class="position-absolute star2" src="../../../assets/img/figures/star.svg" alt=""data-aos="fade-left">
+          <img class="position-absolute star2" src="../../../assets/img/figures/star.svg" alt="" data-aos="fade-left">
           <div class="swiper nft" data-aos="fade-up">
             <!-- Additional required wrapper -->
             <div class="swiper-wrapper d-flex align-items-center">
@@ -128,9 +110,6 @@
               <div class="swiper-slide">
                 <img class="nft" src="../../../assets/img/pictures/item15.png" alt="">
               </div>
-              <div class="swiper-slide">
-                <img class="nft" src="../../../assets/img/pictures/item16.png" alt="">
-              </div>
             </div>
             <div class="section2-pagination"></div>
           </div>
@@ -139,28 +118,33 @@
 
         </div>
       </div>
+        <div class="video  justify-content-center align-items-center"  id="video">
+          <img class="close" src="../../../assets/img/figures/close.png" alt="" id="videoClose" (click)="closeVideo()">
+          <iframe id="videoWeb" src="" title="" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+      </div>
     </div>
   </div>
 
   <div class="home-section3 row overflow-hidden">
-    <div class="col-12 col-lg-6 d-flex align-items-center justify-content-center position-relative home-section3-box1" data-aos="fade-up-right">
+    <div class="col-12 col-lg-6 d-flex align-items-center justify-content-center position-relative home-section3-box1"
+      data-aos="fade-up-right">
       <img class="title" src="../../../assets/img/figures/titlle2.svg" alt="">
       <img class="star position-absolute " src="../../../assets/img/figures/star.svg" alt="">
 
     </div>
     <div
-      class="col-12 col-lg-6 position-relative d-flex flex-column justify-content-center align-items-center mt-5 mt-lg-0 home-section3-box2" data-aos="fade-up-left">
+      class="col-12 col-lg-6 position-relative d-flex flex-column justify-content-center align-items-center mt-5 mt-lg-0 home-section3-box2"
+      data-aos="fade-up-left">
       <div>
-        <h3 class="mb-5">WHO ARE WE? </h3>
-        <p>A global collective made up of people with a social conscience and interest, affinity and curiosity for
-          cultural exchange and initiatives to help different communities and that seeks to celebrate the things in life
-          that make us happy, that connect us and that give us vibrations of the weekend throughout the week.<br><br>
+        <h3 class="mb-5">{{'home.section3.title1' | translate}} </h3>
+        <p>{{'home.section3.p1' | translate}}<br><br>
 
-          It’s an ultra-exclusive community of like-minded people. Join our collective, enjoy it, connect with the
-          community and help create opportunities for other people around the world.
+          {{'home.section3.p2' | translate}}
         </p>
         <div class="btn-white">
-          <app-btn name="Whitepaper"></app-btn>
+          <a href="../../../assets/pdfs/whitepaper_{{'lang' | translate}}.pdf" download>
+            <app-btn name="Whitepaper"></app-btn>
+          </a>
 
         </div>
         <hr>
@@ -170,8 +154,8 @@
 
   <div class="home-section4 row py-5 overflow-hidden">
     <div class="col-12 col-lg-4 position-relative d-flex align-items-center justify-content-center home-section4-box1">
-      <h4 class="mb-5" data-aos="fade-right">UPCOMING
-        <span class="mt-2">EVENTS</span>
+      <h4 class="mb-5" data-aos="fade-right">{{'home.section4.title1' | translate}}
+        <span class="mt-2">{{'home.section4.title2' | translate}}</span>
       </h4>
       <img class="star position-absolute " src="../../../assets/img/figures/star.svg" alt="">
 
@@ -183,19 +167,19 @@
         <div class="swiper-wrapper d-flex align-items-center">
           <!-- Slides -->
           <div class="swiper-slide">
-            <app-card-event event="1" name="MIAMI - NOV"></app-card-event>
+            <app-card-event event="1" name="MIAMI - USA"></app-card-event>
           </div>
           <div class="swiper-slide">
-            <app-card-event event="2" name="CARTAGENA - DEC"></app-card-event>
+            <app-card-event event="2" name="CARTAGENA - CO"></app-card-event>
           </div>
           <div class="swiper-slide">
-            <app-card-event event="3" name="LA - MARCH 2023"></app-card-event>
+            <app-card-event event="3" name="LA - USA"></app-card-event>
           </div>
           <div class="swiper-slide">
-            <app-card-event event="4" name="NEW YORK - MAY 2023"></app-card-event>
+            <app-card-event event="4" name="NEW YORK - USA"></app-card-event>
           </div>
           <div class="swiper-slide">
-            <app-card-event event="5" name="BARU - SUMMER 2023"></app-card-event>
+            <app-card-event event="5" name="BARU ISLAND - CO"></app-card-event>
           </div>
         </div>
         <div class="event-pagination d-flex justify-content-center position-absolute"></div>
@@ -212,13 +196,11 @@
   <div class="bg-5">
     <div class="home-section5 row pt-5">
       <div class="col-12 col-lg-6 d-flex flex-column
-     align-items-center justify-content-center home-section5-box1 overflow-hidden" >
+     align-items-center justify-content-center home-section5-box1 overflow-hidden">
         <div class="text-center text-lg-start my-5 my-lg-0" data-aos="flip-left">
-          <h4>THE<br><span>ARTIST</span></h4>
+          <h4>{{'home.section5.title1' | translate}}<br><span>{{'home.section5.title2' | translate}}</span></h4>
           <p class="mt-5">
-            Brazilian Artist, Fiorello, brings his vibrant color style to 10,000 unique pieces in the collection. There
-            are
-            over 270 traits and some special rarities.
+            {{'home.section5.p' | translate}}
           </p>
         </div>
 
@@ -238,15 +220,14 @@
       <div class="col-12 home-section6 overflow-hidden">
         <div class="title position-relative d-flex justify-content-center" data-aos="fade-left">
           <span class="position-absolute">Billie’s</span>
-          <h4 class="mb-0">BENEFITS</h4>
+          <h4 class="mb-0">{{'home.section6.title1' | translate}}</h4>
           <img class="star position-absolute" src="../../../assets/img/figures/star.svg" alt="">
         </div>
         <hr class="position-relative">
         <p class="paragraph mx-auto mt-5 text-center" data-aos="fade-up">
-          Billie´s holders will gain entry into our Weekend Collective and have priority access to future
-          projects.<br><br>
+          {{'home.section6.p1' | translate}}<br><br>
 
-          We want to collectively create Billie´s brand and bring value back to our creators and members.
+          {{'home.section6.p2' | translate}}
         </p>
 
         <div class="benefits mt-5">
@@ -255,31 +236,31 @@
             <div class="swiper-wrapper d-flex align-items-center">
               <!-- Slides -->
               <div class="swiper-slide">
-                <app-benefits number="1" p="Exclusive access to premium IRL and URL events"></app-benefits>
+                <app-benefits number="1" p="{{'home.benefits.bf1' | translate}}"></app-benefits>
               </div>
               <div class="swiper-slide">
-                <app-benefits number="2" p="Ownership & commercial usage rights"></app-benefits>
+                <app-benefits number="2" p="{{'home.benefits.bf2' | translate}}"></app-benefits>
               </div>
               <div class="swiper-slide">
-                <app-benefits number="3" p="Free Mint and Whitelist for Special Projects"></app-benefits>
+                <app-benefits number="3" p="{{'home.benefits.bf3' | translate}}"></app-benefits>
               </div>
               <div class="swiper-slide">
-                <app-benefits number="4" p="Rare Selection of 500 tokens that will mutate"></app-benefits>
+                <app-benefits number="4" p="{{'home.benefits.bf4' | translate}}"></app-benefits>
               </div>
               <div class="swiper-slide">
-                <app-benefits number="5" p="Access to our Exclusive Members Community"></app-benefits>
+                <app-benefits number="5" p="{{'home.benefits.bf5' | translate}}"></app-benefits>
               </div>
               <div class="swiper-slide">
-                <app-benefits number="6" p="Metaverse access to Billie’s Weekend Collective"></app-benefits>
+                <app-benefits number="6" p="{{'home.benefits.bf6' | translate}}"></app-benefits>
               </div>
               <div class="swiper-slide">
-                <app-benefits number="7" p="Free mint of your digital identity in the Metaverse"></app-benefits>
+                <app-benefits number="7" p="{{'home.benefits.bf7' | translate}}"></app-benefits>
               </div>
               <div class="swiper-slide">
-                <app-benefits number="8" p="Additional asset packs that include educational videos"></app-benefits>
+                <app-benefits number="8" p="{{'home.benefits.bf8' | translate}}"></app-benefits>
               </div>
               <div class="swiper-slide">
-                <app-benefits number="9" p="IRL Treasure Hunt"></app-benefits>
+                <app-benefits number="9" p="{{'home.benefits.bf9' | translate}}"></app-benefits>
               </div>
             </div>
 
@@ -300,16 +281,16 @@
                 <!-- Slides -->
                 <div class="swiper-slide">
                   <div class="home-section7-box1">
-                    <h4>GIVING<br><span>BACK</span></h4>
+                    <h4>{{'home.section7.title1' | translate}}<br><span>{{'home.section7.title2' | translate}}</span>
+                    </h4>
 
-                    <p class="p1">The first foundation we are working with is one close to our hearts, Granitos de Paz
-                      based in
-                      Cartagena, Colombia.</p>
+                    <p class="p1">{{'home.section7.p1' | translate}}</p>
 
-                    <p class="p2">They provide support and facilitate tools to over 13,000 Colombians to help get them
-                      out of
-                      extreme poverty and hopelessness, acquire a decent standard of living and a promising future.</p>
-                    <app-btn name="See more"></app-btn>
+                    <p class="p2">{{'home.section7.p2' | translate}}</p>
+                    <a href="https://granitosdepaz.org.co/" target="_blank" rel="noopener noreferrer">
+                      <app-btn name="See more"></app-btn>
+
+                    </a>
                   </div>
                 </div>
                 <div class="swiper-slide">
@@ -356,47 +337,41 @@
 
           <div class="home-section8 row justify-content-center">
             <div class="col-12 col-lg-6 d-flex justify-content-center home-section8-box1">
-              <h4>MET OUR <br>
-                ROAD MAP <br>
-                2022 - 2023
+              <h4>{{'home.section8.title1' | translate}}
               </h4>
             </div>
             <div class="col-12 col-lg-6 home-section8-box2">
               <div class="elements">
                 <div class="item1" data-aos="fade-left">
-                  <span>PHASE 1: Creation</span>
-                  <p>Creation of the art and rarities for 10,000 unique NFTs</p>
+                  <span>{{'home.section8.phase1' | translate}}</span>
+                  <p>{{'home.section8.p1' | translate}}</p>
                 </div>
                 <div class="item2" data-aos="fade-up">
-                  <span>PHASE 2: Mint</span>
-                  <p>Mint at 0.029 ETH</p>
+                  <span>{{'home.section8.phase2' | translate}}</span>
+                  <p>{{'home.section8.p2' | translate}}</p>
                 </div>
                 <div class="item3" data-aos="fade-right">
-                  <span>PHASE 3: Sell Out</span>
-                  <p>Once we sell out, the 3-day countdown to reveal begins.</p>
+                  <span>{{'home.section8.phase3' | translate}}</span>
+                  <p>{{'home.section8.p3' | translate}}</p>
                 </div>
                 <div class="item4">
-                  <span>PHASE 4: Reveal</span>
-                  <p>Meet your Billie!</p>
+                  <span>{{'home.section8.phase4' | translate}}</span>
+                  <p>{{'home.section8.p4' | translate}}</p>
                 </div>
                 <div class="item5">
-                  <span>PHASE 5: Charitable Donation</span>
-                  <p>Present our chosen foundation with a donation</p>
+                  <span>{{'home.section8.phase5' | translate}}</span>
+                  <p>{{'home.section8.p5' | translate}}</p>
                 </div>
                 <div class="item6">
-                  <span>PHASE 6: First Live Sponsored Event</span>
-                  <p>Holders will have priority access to this amazing event.</p>
+                  <span>{{'home.section8.phase6' | translate}}</span>
+                  <p>{{'home.section8.p6' | translate}}</p>
                 </div>
               </div>
             </div>
             <div class="home-section8-box3 d-flex justify-content-center align-items-center flex-column">
-              <h4>ALLIES</h4>
+              <h4>{{'home.section9.title1' | translate}}</h4>
               <hr class="w-100 mx-auto">
-              <p>We’re so thankful for the generosity of our family of sponsors and supporters. This is more than just a
-                listing of logos – this is a community of organizations and influencers who truly embrace our community
-                and
-                our mission of bringing more joy to the world.</p>
-
+              <p>{{'home.section9.p1' | translate}}</p>
 
             </div>
 
@@ -446,27 +421,27 @@
 
         </div>
         <div class="faq position-relative">
-          <h3 class="mx-auto">FAQ</h3>
+          <h3 class="mx-auto">{{'home.faq.faq' | translate}}</h3>
           <div class="img position-relative">
             <img class="star1 position-absolute " src="../../../assets/img/figures/star.svg" alt="">
           </div>
 
           <div class="faq-box row justify-content-center justify-content-lg-between mt-4 mt-sm-0">
             <div class="col-12 col-sm-6 mt-5 text-center text-sm-start" data-aos="fade-right">
-              <h4>HOW MANY NFT ARE GOING TO EXIST? </h4>
-              <p>10,000 NFTS IN THE FIRST COLLECTION. </p>
+              <h4>{{'home.faq.title1' | translate}} </h4>
+              <p>{{'home.faq.p1' | translate}} </p>
             </div>
             <div class="col-12 col-sm-6 mt-5 text-center text-sm-start" data-aos="fade-left">
-              <h4>HOW MANY PER</h4>
-              <p>3 MAX.</p>
+              <h4>{{'home.faq.title2' | translate}}</h4>
+              <p>{{'home.faq.p2' | translate}} </p>
             </div>
             <div class="col-12 col-sm-6 mt-5 text-center text-sm-start" data-aos="fade-up">
-              <h4>MINT PRICE? </h4>
-              <p>0.025 ETH.</p>
+              <h4>{{'home.faq.title3' | translate}} </h4>
+              <p>0.029 ETH </p>
             </div>
             <div class="col-12 col-sm-6 mt-5 text-center text-sm-start" data-aos="fade-up">
-              <h4>BLOCKCHAIN?</h4>
-              <p>ETHEREUM.</p>
+              <h4>{{'home.faq.title4' | translate}}</h4>
+              <p>{{'home.faq.p4' | translate}}</p>
             </div>
           </div>
         </div>

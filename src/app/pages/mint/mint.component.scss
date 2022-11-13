@@ -152,6 +152,12 @@
         #x-wallet {
           font-size: 1rem;
         }
+        @media screen and (max-width: 767px) {
+          font-size: 1.4rem;
+          span {
+            font-size: 1.4rem;
+          }
+        }
       }
     }
     &-box2 {
@@ -248,6 +254,9 @@
                 font-size: 2rem;
                 pointer-events: none;
                 transform: translateX(8px);
+                @media screen and (max-width: 600px) {
+                  transform: translateX(0);
+                }
                 // user-select: none;
                 &:active,
                 &:focus {
@@ -334,14 +343,14 @@
           background-size: cover;
           height: 400px;
           &:first-child {
-            background-image: url(../../../assets/img/pictures/item18.png);
+            background-image: url(../../../assets/img/pictures/item3.png);
             border-radius: 1rem 0 0 1rem;
           }
           &:nth-child(2) {
-            background-image: url(../../../assets/img/pictures/item2.png);
+            background-image: url(../../../assets/img/pictures/item1.png);
           }
           &:last-child {
-            background-image: url(../../../assets/img/pictures/item3.png);
+            background-image: url(../../../assets/img/pictures/item2.png);
             border-radius: 0 1rem 1rem 0;
           }
           .nft-img {

@@ -16,6 +16,9 @@ export class LangComponent implements OnInit {
   code1 = "";
   code2 = "";
 
+
+
+
   en() {
     localStorage.setItem('value', 'en');
     this.code1="active";
@@ -48,10 +51,6 @@ export class LangComponent implements OnInit {
       }
 
     }
-
-
-
-
 
     translate.addLangs(['en', 'es']);
     const lang = translate.getBrowserLang();

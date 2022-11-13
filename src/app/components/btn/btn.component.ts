@@ -10,6 +10,7 @@ export class BtnComponent implements OnInit {
   constructor() { }
 
   @Input() name= "";
+
   ngOnInit(): void {
   }
 

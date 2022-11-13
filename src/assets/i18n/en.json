@@ -1,0 +1,94 @@
+{
+  "lang":"en",
+  "home":{
+    "section1":{
+      "title1":"Creating joy and",
+      "title2":"weekend vibes",
+      "title3":"all week long…"
+    },
+    "section2":{
+      "title1":"FOR A COMMUNITY",
+      "title2":"OF MAGICAL HUMANS",
+      "p":"That love connection, a great party, and giving back in meaningful ways."
+    },
+    "section3":{
+      "title1":"WHO ARE WE?",
+        "p1":"A global collective made up of people with a social conscience and interest, affinity and curiosity for cultural exchange and initiatives to help different communities and that seeks to celebrate the things in life that make us happy, that connect us and that give us vibrations of the weekend throughout the week.",
+        "p2":"It’s an ultra-exclusive community of like-minded people. Join our collective, enjoy it, connect with the community and help create opportunities for other people around the world."
+    },
+    "section4":{
+      "title1":"UPCOMING",
+      "title2":"EVENTS",
+      "event":"EVENT",
+      "event2":"WAIT FOR IT"
+
+    },
+    "section5":{
+      "title1":"THE",
+      "title2":"ARTIST",
+      "p":"Brazilian Artist, Fiorello, brings his vibrant color style to 10,000 unique pieces in the collection. There are over 300 traits and some special rarities."
+    },
+    "section6":{
+      "title1":"BENEFITS",
+      "p1":"Billie´s holders will gain entry into our Weekend Collective and have priority access to future projects.",
+      "p2":"We want to collectively create Billie´s brand and bring value back to our creators and members."
+    },
+     "section7":{
+      "title1":"GIVING",
+      "title2":"BACK",
+      "p1":"The first foundation we are working with is one close to our hearts, Granitos de Paz based in Cartagena, Colombia.",
+      "p2":"They provide support and facilitate tools to over 13,000 Colombians to help get them out of extreme poverty and hopelessness, acquire a decent standard of living and a promising future."
+    },
+    "section8":{
+      "title1":"ROAD MAP",
+      "phase1":"PHASE 1: Creation",
+      "p1":"Creation of the art and rarities for 10,000 unique NFTs",
+      "phase2":"PHASE 2: Mint",
+      "p2":"Mint at 0.029 ETH",
+      "phase3":"PHASE 3: Sell Out",
+      "p3":"Once we sell out, the 3-day countdown to reveal begins.",
+      "phase4":"PHASE 4: Reveal",
+      "p4":"Meet your Billie!",
+      "phase5":"PHASE 5: Charitable Donation",
+      "p5":"Present our chosen foundation with a donation",
+      "phase6":"PHASE 6: First Live Sponsored Event",
+      "p6":"Holders will have priority access to this amazing event."
+    },
+    "section9":{
+      "title1":"ALLIES",
+      "p1":"We’re so thankful for the generosity of our family of sponsors and supporters. This is more than just a listing of logos – this is a community of organizations and influencers who truly embrace our community and our mission of bringing more joy to the world."
+    },
+    "faq":{
+      "faq":"faq",
+      "title1":"HOW MANY NFT ARE GOING TO EXIST?",
+      "p1":"10,000 NFTS IN THE FIRST COLLECTION.",
+      "title2":"HOW MANY PER WALLET?",
+      "p2":"3 MAX.",
+      "title3":"MINT PRICE? ",
+      "title4":"BLOCKCHAIN?",
+      "p4":"ETHEREUM."
+    },
+    "benefits":{
+      "bf1":"Exclusive access to premium IRL and URL events",
+      "bf2":"Ownership & commercial usage rights",
+      "bf3":"Free Mint and Whitelist for Special Projects",
+      "bf4":"Rare Selection of 500 tokens that will mutate",
+      "bf5":"Access to our Exclusive Members Community",
+      "bf6":"Metaverse access to Billie’s Weekend Collective",
+      "bf7":"Free mint of your digital identity in the Metaverse",
+      "bf8":"Additional asset packs that include educational videos",
+      "bf9":"IRL Treasure Hunt"
+    }
+  },
+
+  "mint":{
+    "supply":"supply",
+    "title1":"COMING SOON",
+    "title2":"FIRST COLLECTION",
+    "title3":"Per Wallet",
+    "title6":"PRICE PER NFT",
+    "title7":"Quantity",
+    "price":"price"
+  },
+  "footer":"FOLLOW US FOR MORE"
+}

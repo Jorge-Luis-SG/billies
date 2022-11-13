@@ -10,7 +10,6 @@
     span {
       margin: 0 1rem;
       font-size: 1.35rem;
-      min-width: 140px;
       font-family: "itc";
     }
     .event {
@@ -19,6 +18,8 @@
     .default {
       font-weight: 100;
       color: $dark-blue;
+      min-width: 125px;
+      margin-right: 6rem;
     }
   }
 }

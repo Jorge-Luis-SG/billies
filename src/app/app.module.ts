@@ -19,6 +19,7 @@ import { MintComponent } from './pages/mint/mint.component';
 import { LangComponent } from './lang/lang.component';
 import { HttpClient, HttpClientModule } from '@angular/common/http';
 import { CommonModule } from '@angular/common';
+import { UpComponent } from './components/up/up.component';
 
 
 @NgModule({
@@ -31,7 +32,8 @@ import { CommonModule } from '@angular/common';
     BenefitsComponent,
     FooterComponent,
     MintComponent,
-    LangComponent
+    LangComponent,
+    UpComponent
 
   ],
   imports: [

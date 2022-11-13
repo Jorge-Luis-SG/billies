@@ -7,7 +7,6 @@ import { Component, OnInit } from '@angular/core';
 })
 export class AdvertisementsComponent implements OnInit {
 
-  default : string = "WAIT FOR IT";
 
   constructor() { }
 

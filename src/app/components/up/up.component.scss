@@ -1,0 +1,15 @@
+.up {
+  display: none;
+  padding: 20px;
+  background: #f9bf15;
+  font-size: 20px;
+  color: #fff;
+  cursor: pointer;
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  z-index: 99999;
+  @media screen and (max-width: 767px) {
+    padding: 10px;
+  }
+}

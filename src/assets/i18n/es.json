@@ -1,0 +1,94 @@
+{
+  "lang":"es",
+  "home":{
+    "section1":{
+      "title1":"Creando felicidad y",
+      "title2":"vibras del fin de semana",
+      "title3":"toda la semana…"
+    },
+    "section2":{
+      "title1":"UNA COMUNIDAD",
+      "title2":"DE GENTE MÁGICA",
+      "title3":"",
+      "p":"Que busca conectarse a través de increíbles eventos y de retribuir significativamente con obras de impacto social."
+    },
+    "section3":{
+      "title1":"¿QUIÉNES SOMOS?",
+        "p1":"Un colectivo global formado por personas con conciencia social e interés, afinidad y curiosidad por el intercambio cultural y las iniciativas de ayuda a diferentes comunidades y que busca celebrar las cosas de la vida que nos hacen felices, que nos conectan y que nos transmiten vibraciones del fin de semana durante toda la semana.",
+        "p2":"Es una comunidad ultra exclusiva de personas de ideas afines. Únase a nuestro colectivo, disfrútelo, conéctese con la comunidad y ayude a crear oportunidades para otras personas en todo el mundo."
+    },
+    "section4":{
+      "title1":"PROXIMOS",
+      "title2":"EVENTOS",
+      "event":"EVENTO",
+      "event2":"PRÓXIMAMENTE"
+    },
+    "section5":{
+      "title1":"EL",
+      "title2":"ARTISTA",
+      "p":"El artista brasileño, Fiorello, trae su estilo de colores vibrantes a 10,000 piezas únicas en la colección. Hay más de 300 rasgos y algunas rarezas especiales."
+    },
+    "section6":{
+      "title1":"BENEFICIOS",
+      "p1":"Los poseedores de Billie obtendrán acceso a nuestro Weekend Collective y tendrán acceso prioritario a futuros proyectos.",
+      "p2":"Queremos crear colectivamente la marca de Billie y devolver valor a nuestros creadores y miembros."
+    },
+     "section7":{
+      "title1":"APOYAMOS CAUSAS",
+      "title2":"CON CORAZÓN",
+      "p1":"La primera fundación con la que estamos trabajando es una cercana a nuestros corazones, Granitos de Paz con sede en Cartagena, Colombia.",
+      "p2":"Brindan apoyo y facilitan herramientas a más de 13.000 colombianos para ayudarlos a salir de la pobreza extrema y la desesperanza, adquirir un nivel de vida digno y un futuro prometedor."
+    },
+    "section8":{
+      "title1":"ROAD MAP",
+      "phase1":"FASE 1: Creación",
+      "p1":"Creación de arte y rarezas para 10 000 NFT únicos",
+      "phase2":"FASE 2: Mint",
+      "p2":"Mint a 0.029 ETH",
+      "phase3":"FASE 3: Venta",
+      "p3":"Una vez que se agoten, comienza la cuenta regresiva de 3 días para revelar.",
+      "phase4":"FASE 4: Revelación",
+      "p4":"Conoce tu Billie!",
+      "phase5":"FASE 5: Donación caritativa",
+      "p5":"Presentar nuestra fundación elegida con una donación",
+      "phase6":"FASE 6: Primer evento patrocinado en vivo",
+      "p6":"Los titulares tendrán acceso prioritario a este increíble evento."
+    },
+    "section9":{
+      "title1":"ALIADOS",
+      "p1":"Estamos muy agradecidos por la generosidad de nuestra familia de patrocinadores y simpatizantes. Esto es más que una simple lista de logotipos: esta es una comunidad de organizaciones y personas influyentes que realmente abrazan a nuestra comunidad y nuestra misión de traer más alegría al mundo."
+    },
+    "faq":{
+      "faq":"FAQ",
+      "title1":"¿CUANTOS NFT VAN A EXISTIR?",
+      "p1":"10,000 NFTS EN LA PRIMER COLECCIÓN.",
+      "title2":"¿CUÁNTOS POR WALLET?",
+      "p2":"3 MÁXIMO.",
+      "title3":"¿PRECIO DEL MINT? ",
+      "title4":"¿BLOCKCHAIN?",
+      "p4":"ETHEREUM."
+    },
+    "benefits":{
+      "bf1":"Acceso exclusivo a eventos IRL y URL premium",
+      "bf2":"Propiedad y derechos de uso comercial",
+      "bf3":"MINT Gratuito y lista blanca para proyectos especiales",
+      "bf4":"Selección rara de 500 tokens que mutarán",
+      "bf5":"Acceso a nuestra Comunidad Exclusiva de Miembros",
+      "bf6":"Acceso al metaverso de Billie’s Weekend Collective",
+      "bf7":"MINT Gratis de tu identidad digital en el Metaverso",
+      "bf8":"Paquetes de activos adicionales que incluyen videos educativos",
+      "bf9":"Búsqueda del tesoro en la vida real"
+    }
+  },
+
+  "mint":{
+    "supply":"SUMINISTRO",
+    "title1":"PRÓXIMAMENTE",
+    "title2":"PRIMERA COLECCIÓN",
+    "title3":"Por Wallet",
+    "title6":"PRECIO POR NFT",
+    "title7":"CANTIDAD",
+    "price":"precio"
+  },
+  "footer":"SÍGUENOS PARA MÁS"
+}
